@@ -17,9 +17,10 @@ public class LinkedListTest {
         n3.next = n4;
         LinkedListRealize linkedList = new LinkedList();
         linkedList.remove(n3);
-        linkedList.access(n0,2);
-
+        ListNode access = linkedList.access(n0, 2);
+        System.out.println(access);
         linkedList.insert(n3,n4);
+        linkedList.find(n0,4);
     }
 
 

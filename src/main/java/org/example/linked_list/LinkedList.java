@@ -29,6 +29,18 @@ public class LinkedList implements LinkedListRealize {
         return head;
     }
 
+    @Override
+    /* 在链表中查找值为 target 的首个节点 */
+    public int find(ListNode head, int target) {
+        int index = 0;
+        for(;head != null;head = head.next){
+            if (head.val == target){
+                return index;
+            }
+            index++;
+        }
+        return -1;
+    }
 
 
 }
