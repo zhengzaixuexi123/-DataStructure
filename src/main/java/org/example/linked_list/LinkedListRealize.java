@@ -5,5 +5,4 @@ public interface LinkedListRealize {
     void remove(ListNode n0);
     ListNode access(ListNode head, int index);
     int find(ListNode head, int target);
-
 }
