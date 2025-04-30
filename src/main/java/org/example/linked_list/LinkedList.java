@@ -34,7 +34,7 @@ public class LinkedList implements LinkedListRealize {
     public int find(ListNode head, int target) {
         int index = 0;
         for(;head != null;head = head.next){
-            if (head.val == target){
+            if (head.getVal() == target){
                 return index;
             }
             index++;

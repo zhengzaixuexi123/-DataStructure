@@ -37,14 +37,14 @@ public class linkedList_stack {
         if(isEmpty()){
             throw new IndexOutOfBoundsException("Stack is empty");
         }
-        return stackPeek.val;
+        return stackPeek.getVal();
     }
     /*将List转化为Array并返回*/
     public int[] toArray(){
         ListNode node = stackPeek;
         int[] res = new int[size()];
         for(int i = res.length - 1; i >= 0; i--){
-            res[i] = node.val;
+            res[i] = node.getVal();
             node = node.next;
         }
         return res;
