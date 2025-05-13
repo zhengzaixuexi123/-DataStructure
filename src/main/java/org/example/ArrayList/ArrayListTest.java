@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import static com.sun.javafx.fxml.expression.Expression.add;
 
+/*扩容机制:newCapacity=oldCapacity+（oldCapacity >> 1）*/
 public class ArrayListTest {
     public static void main(String[] args) {
         /*初始化列表*/
