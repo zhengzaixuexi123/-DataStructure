@@ -11,7 +11,7 @@ public class hash_map {
         //默认MIN_TREEIFY_CAPACITY = 64;
         //默认TREEIFY_THRESHOLD = 8;
         //UNTREEIFY_THRESHOLD = 6;
-        /*当哈希筒的单链表在插入后的长度大于等于8，且hashmap最大容量位64时，会转化链表为红黑树、
+        /*当哈希筒的单链表在插入后的长度大于等于8，且hashmap最大容量为64时，会转化链表为红黑树，注意数组最大容量不是64
          * 当哈希桶的红黑树只有6个元素的话，会转为链表*/
 
         HashMap<Integer, String> hashMap = new HashMap<>();
